@@ -42,7 +42,7 @@ contract Escrow {
         address payable _seller,
         address _inspector,
         address _lender
-    ) {
+    ) { 
         nftAddress = _nftAddress;
         seller = _seller;
         inspector = _inspector;
@@ -61,7 +61,7 @@ contract Escrow {
         isListed[_nftID] = true;
         purchasePrice[_nftID] = _purchasePrice;
         escrowAmount[_nftID] = _escrowAmount;
-        buyer[_nftID] = _buyer;
+        buyer[_nftID] = _buyer; 
     }
 
     // Put Under Contract (only buyer - payable escrow)
